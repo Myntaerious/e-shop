@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>tienda virtual</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/stylesheets/w3.css">
 <link rel="stylesheet" href="assets/stylesheets/w3-theme-deep-purple.css">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
+<link rel="stylesheet" href="assets/stylesheets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 <style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+.w3-sidebar a {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Raleway", sans-serif;}
 </style>
 <body class="w3-content" style="max-width:1200px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="sidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>LOGO</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Jeans <i class="fa fa-caret-down"></i>
+    <a href="#" class="w3-bar-item w3-button w3-hover-theme">Música</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-theme">Libros</a>
+    <a onclick="accFunct()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align w3-hover-theme" id="myBtn">
+      Videojuegos <i class="fa fa-caret-down"></i>
     </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-      <a href="#" class="w3-bar-item w3-button">Straight</a>
+    <div id="acc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-theme-l4 w3-hover-theme"><i class="fa fa-caret-right w3-margin-right"></i>Nintendo Switch</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">Xbox One</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">Playstation</a>
     </div>
-    <a href="#" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" class="w3-bar-item w3-button">Blazers</a>
-    <a href="#" class="w3-bar-item w3-button">Shoes</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-theme">Manga</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-theme">Cómics</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-theme">Películas</a>
   </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding w3-hover-theme">Contacto</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hover-theme" onclick="document.getElementById('newsletter').style.display='block'">Subscribase</a> 
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+<!-- Menu de arriba en pantallas pequeñas -->
+<header class="w3-bar w3-top w3-hide-large w3-theme-d5 w3-xlarge">
   <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Efecto sobrepuesto al abrir el sidebar en pantallas pequeñas -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="overlay"></div>
 
-<!-- !PAGE CONTENT! -->
+<!-- !CONTENIDO DE LA PAGINA! -->
 <div class="w3-main" style="margin-left:250px">
 
-  <!-- Push down content on small screens -->
+  <!-- Empujar contenido hacia abajo en pantallas pequeñas -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <p class="w3-left">Jeans</p>
+    <p class="w3-left">¡Nuevo!</p>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
@@ -69,122 +64,148 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <img src="assets/images/videojuegos/hyrule warriors.jpg" alt="minecraft" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTION 2016</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+      <h1 class="w3-jumbo w3-hide-small">Nuevos productos</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Nuevos productos</h1>
+      <h1 class="w3-hide-small">Lanzamientos 2020</h1>
+      <p><a href="#" class="w3-button w3-theme-d5 w3-hover-theme w3-padding-large w3-large">COMPRAR</a></p>
     </div>
   </div>
 
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+  <div class="w3-container w3-text-grey" id="switch">
+    <p>8 productos</p>
   </div>
 
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
+  <!-- Grid de productos-->
+  <div class="w3-row">
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+        <div class="w3-display-container">
+          <img src="assets/images/videojuegos/switch/hyrule-warriors-age-of-calamity.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Hyrule Warriors: age of calamity<br><b>$24.99</b></p>
       </div>
       <div class="w3-container">
-        <img src="/w3images/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <div class="w3-display-container">
+          <img src="assets/images/videojuegos/switch/animal-crossing-new-horizons.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Animal Crossing: New Horizons<br><b>$19.99</b></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <div class="w3-display-container">
-          <img src="/w3images/jeans2.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
+          <img src="assets/images/videojuegos/switch/monster-hunter.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft w3-theme-d5">Nuevo</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+        <p>Monster Hunter<br><b>$19.99</b></p>
       </div>
       <div class="w3-container">
         <div class="w3-display-container">
-          <img src="/w3images/jeans4.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Sale</span>
+          <img src="assets/images/videojuegos/switch/pokemon-escudo.png" style="width:100%">
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+        <p>Pokémon Escudo<br><b>$20.50</b></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+        <div class="w3-display-container">
+          <img src="assets/images/videojuegos/switch/pokemon-espada.png" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Pokémon Espada<br><b>$20.50</b></p>
       </div>
       <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+        <div class="w3-display-container">
+          <img src="assets/images/videojuegos/switch/super-mario-odyssey.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft w3-theme-d5">Oferta</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Super Mario Odissey<br><b class="w3-text-red">$14.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="assets/images/videojuegos/switch/super-smash-bros-ultimate.png" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Super Smash Bros Ultimate<br><b>$14.99</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="assets/images/videojuegos/switch/zelda-botw.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-theme-d2">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Zelda: Breath of the Wild<br><b>$24.99</b></p>
       </div>
     </div>
   </div>
 
-  <!-- Subscribe section -->
-  <div class="w3-container w3-black w3-padding-32">
-    <h1>Subscribe</h1>
-    <p>To get special offers and VIP treatment:</p>
-    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  <!-- Sección de suscripción -->
+  <div class="w3-container w3-theme-d5 w3-padding-32">
+    <h1>Suscríbase</h1>
+    <p>Para recibir ofertas:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Coloque su e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-theme-l3 w3-margin-bottom">Suscribir</button>
   </div>
   
   <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+  <footer class="w3-padding-64 w3-theme-l4 w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Contact</h4>
-        <p>Questions? Go ahead.</p>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+        <h4>Contacto</h4>
+        <p>¿Preguntas? Adelante</p>
+        <form action="" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+          <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
         </form>
       </div>
 
       <div class="w3-col s4">
-        <h4>About</h4>
-        <p><a href="#">About us</a></p>
-        <p><a href="#">We're hiring</a></p>
-        <p><a href="#">Support</a></p>
-        <p><a href="#">Find store</a></p>
-        <p><a href="#">Shipment</a></p>
-        <p><a href="#">Payment</a></p>
-        <p><a href="#">Gift card</a></p>
-        <p><a href="#">Return</a></p>
-        <p><a href="#">Help</a></p>
+        <h4>Acerca</h4>
+        <p><a href="#">Nosotros</a></p>
+        <p><a href="#">Soporte</a></p>
+        <p><a href="#">Envíos</a></p>
+        <p><a href="#">Pagos</a></p>
+        <p><a href="#">Ayuda</a></p>
       </div>
 
       <div class="w3-col s4 w3-justify">
-        <h4>Store</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-        <h4>We accept</h4>
-        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <h4>Tienda</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Nombre tienda</p>
+        <p><i class="fa fa-fw fa-phone"></i> +58 281 1234567</p>
+        <p><i class="fa fa-fw fa-envelope"></i> correo@gmail.com</p>
+        <h4>Aceptamos</h4>
+        <p>Paypal</p>
+        <p>Reserve</p>
         <br>
         <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
         <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
@@ -196,7 +217,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </footer>
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-theme-d5 w3-center w3-padding-24"><small>&copy; Nombre de la tienda</small></div>
 
   <!-- End page content -->
 </div>
@@ -216,8 +237,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <script>
 // Accordion 
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
+function accFunct() {
+  var x = document.getElementById("acc");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
@@ -231,13 +252,13 @@ document.getElementById("myBtn").click();
 
 // Open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("sidebar").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
 }
  
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("sidebar").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
 }
 </script>
 
